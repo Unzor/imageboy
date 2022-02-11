@@ -28,6 +28,8 @@ imageboy.run({
 })
   ```
   
+---
+  
 `imageboy.runB64()`: Runs an emulator and returns a Base64 string of image. 
 
 ### `runB64()` arguments
@@ -53,6 +55,7 @@ imageboy.runB64({
   }
 })
 ```
+---
 
 `imageboy.runDataURL()`: Runs an emulator and returns a data URL of the image. 
 
@@ -69,7 +72,7 @@ Returns with:
 #### `sendKeys()` arguments
 1: (array) Array of keycodes to press.
 
-### `imageboy.runB64()` example
+### `imageboy.runDataURL()` example
 ```javascript
 imageboy.runDataURL({
   path: "pokemon_blue.gb",
