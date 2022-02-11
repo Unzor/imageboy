@@ -1,6 +1,14 @@
 # imageboy
 GameBoy emulator library for Node.js with the main point being for creating images, made with the node-canvas and serverboy projects.
 
+# Installation
+```
+npm install imageboy
+```
+
+# Examples of usage
+See [examples](/examples) directory.
+
 # Documentation
 `imageboy.run()`: Runs an emulator. 
 
