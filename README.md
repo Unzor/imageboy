@@ -90,3 +90,6 @@ imageboy.runDataURL({
   }
 })
 ```
+
+# Cairo-related errors
+If you get an error about "libuuid.so.0" or another shared library file, then you should install Cairo, or on Replit, you should use the "NodeJS with Canvas" template. I am not the author of node-canvas (which uses Cairo), and if you find a related error, create an issue [here](https://github.com/Automattic/node-canvas/issues), not on this repo.
