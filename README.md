@@ -9,6 +9,7 @@ npm install imageboy
 # Simple usage
 ```javascript
 var imageboy = require("imageboy");
+var fs = require("fs");
 imageboy.run({
   path: "pokemon_blue.gb",
   interval: 16.6666667, // 60 FPS
