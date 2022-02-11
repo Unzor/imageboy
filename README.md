@@ -29,7 +29,7 @@ Returns with:
 ```javascript
 imageboy.run({
   path: "pokemon_blue.gb",
-  interval: 16.6666667 // 60 FPS
+  interval: 16.6666667, // 60 FPS
   onFrame: function(frame) {
   fs.writeFileSync("frame.png", frame);
   }
@@ -57,7 +57,7 @@ Returns with:
 ```javascript
 imageboy.runB64({
   path: "pokemon_blue.gb",
-  interval: 16.6666667 // 60 FPS
+  interval: 16.6666667, // 60 FPS
   onFrame: function(frame) {
  console.log("Base64 of frame: " + frame);
   }
@@ -84,7 +84,7 @@ Returns with:
 ```javascript
 imageboy.runDataURL({
   path: "pokemon_blue.gb",
-  interval: 16.6666667 // 60 FPS
+  interval: 16.6666667, // 60 FPS
   onFrame: function(frame) {
   console.log("DataURL: " + frame);
   }
