@@ -30,7 +30,7 @@ imageboy.run({
   
 `imageboy.runB64()`: Runs an emulator and returns a Base64 string of image. 
 
-### `run()` arguments
+### `runB64()` arguments
 1: (array), inside the array:
 - `interval` (optional): The interval to generate a frame at. Default is 16.6666667 (60 FPS).
 - `path` (required): The path of the game ROM.
@@ -56,7 +56,7 @@ imageboy.runB64({
 
 `imageboy.runDataURL()`: Runs an emulator and returns a data URL of the image. 
 
-### `run()` arguments
+### `runDataURL()` arguments
 1: (array), inside the array:
 - `interval` (optional): The interval to generate a frame at. Default is 16.6666667 (60 FPS).
 - `path` (required): The path of the game ROM.
