@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <img id="frame">
+    <script>
+        var socket = io();
+        socket.emit("run");
+        socket.on("frame", (url) => {
+            document.getElementById("frame").src = url;
+        })
+
+        window.onkeydown = function(e) {
+            var keys = {
+                "37": "left",
+                "39": "right",
+                "38": "up",
+                "40": "down",
+                "65": "a",
+                "66": "b",
+                "13": "start",
+                "32": "select"
+            };
+
+            if (keys[e.keyCode] != undefined) {
+                socket.emit('keydown', {
+                    key: keys[e.keyCode]
+                });
+            }
+        }
+    </script>
+</body>
+</html>
