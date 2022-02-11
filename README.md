@@ -6,7 +6,19 @@ GameBoy emulator library for Node.js with the main point being for creating imag
 npm install imageboy
 ```
 
-# Examples of usage
+# Simple usage
+```javascript
+var imageboy = require("imageboy");
+imageboy.run({
+  path: "pokemon_blue.gb",
+  interval: 16.6666667, // 60 FPS
+  onFrame: function(frame) {
+  fs.writeFileSync("frame.png", frame);
+  }
+})
+```
+
+# Examples of actual usage
 See [examples](/examples) directory.
 
 # Documentation
