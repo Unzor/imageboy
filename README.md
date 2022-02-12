@@ -6,6 +6,14 @@ GameBoy emulator library for Node.js with the main point being for creating imag
 npm install imageboy
 ```
 
+# Setting up from source
+```
+git clone https://github.com/Unzor/imageboy
+cd imageboy
+npm i
+```
+Use `var imageboy = require("imageboy/src/imageboy")` to import it in a script.
+
 # Simple usage
 ```javascript
 var imageboy = require("imageboy");
