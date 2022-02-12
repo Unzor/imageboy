@@ -1,0 +1,21 @@
+{
+  "name": "imageboy",
+  "version": "1.0.2",
+  "repository": "https://github.com/Unzor/imageboy",
+  "description": "GameBoy emulator library for Node.js with the main point being for creating images, made with the node-canvas and serverboy projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "emulation",
+    "gameboy",
+    "nodejs"
+  ],
+  "author": "diegab",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.9.0",
+    "serverboy": "^0.0.7"
+  }
+}
