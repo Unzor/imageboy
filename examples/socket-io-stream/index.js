@@ -18,7 +18,7 @@ io.on('connection', (socket) => {
     socket.on('run', () => {
       var keysToPress = [];
         var emulator = imageboy.runDataURL({
-            path: "pokblu.gb",
+            path: "pokemon_blue.gb",
             interval: 16.6666667,
             onFrame: function(frame) {
                 io.emit("frame", frame);
