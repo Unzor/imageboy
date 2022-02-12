@@ -1,6 +1,6 @@
 var fs = require("fs");
 var index = 0;
-var imageboy = require("./imageboy");
+var imageboy = require("imageboy");
 const express = require('express');
 const app = express();
 const http = require('http');
