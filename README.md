@@ -12,7 +12,7 @@ git clone https://github.com/Unzor/imageboy
 cd imageboy
 npm i
 ```
-Use `var imageboy = require("imageboy/src/imageboy")` to import it in a script.
+Use `var imageboy = require("imageboy/src/imageboy")` to import it in a script outside of the "imageboy" folder.
 
 # Simple usage
 ```javascript
