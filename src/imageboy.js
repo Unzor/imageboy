@@ -1,6 +1,6 @@
 module.exports = {
     run: function(settings) {
-        var interval = settings.interval;
+        var interval = settings.fps * 0.277777778;
         var path = settings.path;
         var cb = settings.onFrame;
         var fs = require("fs");
@@ -41,7 +41,7 @@ module.exports = {
         }
     },
     runB64: function(settings) {
-        var interval = settings.interval;
+        var interval = settings.fps * 0.277777778;
         var path = settings.path;
         var cb = settings.onFrame;
         var fs = require("fs");
@@ -82,7 +82,7 @@ module.exports = {
         }
     },
     runDataURL: function(settings) {
-        var interval = settings.interval;
+        var interval = settings.fps * 0.277777778;
         var path = settings.path;
         var cb = settings.onFrame;
         var fs = require("fs");
