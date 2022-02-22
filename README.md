@@ -21,7 +21,7 @@ var fs = require("fs");
 
 imageboy.run({
   path: "pokemon_blue.gb",
-  interval: 16.6666667, // 60 FPS
+  fps: 60,
   onFrame: function(frame) {
   fs.writeFileSync("frame.png", frame);
   }
@@ -36,7 +36,7 @@ See [examples](/examples) directory.
 
 ### `run()` arguments
 1: (array), inside the array:
-- `interval` (optional): The interval to generate a frame at. Default is 16.6666667 (60 FPS).
+- `fps` (optional): The FPS of the emulator. Default is 60 FPS.
 - `path` (required): The path of the game ROM.
 - `onFrame` (required): A callback on when a frame is generated, calls back a buffer of the image.
 
@@ -64,7 +64,7 @@ imageboy.run({
 
 ### `runB64()` arguments
 1: (array), inside the array:
-- `interval` (optional): The interval to generate a frame at. Default is 16.6666667 (60 FPS).
+- `fps` (optional): The FPS of the emulator. Default is 60 FPS.
 - `path` (required): The path of the game ROM.
 - `onFrame` (required): A callback on when a frame is generated, calls back a Base64 string of the image.
 
@@ -91,7 +91,7 @@ imageboy.runB64({
 
 ### `runDataURL()` arguments
 1: (array), inside the array:
-- `interval` (optional): The interval to generate a frame at. Default is 16.6666667 (60 FPS).
+- `fps` (optional): The FPS of the emulator. Default is 60 FPS.
 - `path` (required): The path of the game ROM.
 - `onFrame` (required): A callback on when a frame is generated, calls back a data URL of the image.
 
