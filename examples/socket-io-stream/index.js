@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
             isRunning = true;
             global.emulator = imageboy.runDataURL({
                 path: "pokblu.gb",
-                interval: 16.6666667,
+                fps: 60,
                 onFrame: function(frame) {
                     global.frame = frame;
                     io.emit("frame", frame);
